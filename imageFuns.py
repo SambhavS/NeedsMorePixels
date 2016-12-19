@@ -1,10 +1,15 @@
 from __future__ import print_function
 from PIL import Image, ImageDraw
-im=Image.open("cow.jpg")
-print("Hello world")
+import sys
+
+im=Image.open(sys.argv[1])
+# print("Hello world")
+
 print(im.format, im.size, im.mode)
-side=100
-qRatio=5
+side=100 #how big pixels are
+qRatio=.1*side #how many it skips; bigger the number faster the results but inaccurate
+
+#core
 for sqX in range(int(im.size[0]/side)):
     for sqY in range(int(im.size[1]/side)):
         r=0
@@ -22,5 +27,6 @@ for sqX in range(int(im.size[0]/side)):
         bAv=int(b/((side/qRatio)**2))
         draw=ImageDraw.Draw(im)
         draw.rectangle([sqX*side,sqY*side,(sqX+1)*side,(sqY+1)*side],(rAv,gAv,bAv))
-im.show()
+        
+im.save(sys.argv[2])
 
