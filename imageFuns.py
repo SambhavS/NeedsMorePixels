@@ -6,7 +6,7 @@ im=Image.open(sys.argv[1])
 # print("Hello world")
 
 print(im.format, im.size, im.mode)
-side=100 #how big pixels are
+side=int(sys.argv[3]) #how big pixels are
 qRatio=.1*side #how many it skips; bigger the number faster the results but inaccurate
 
 #core
