@@ -8,7 +8,9 @@ im=Image.open(sys.argv[1])
 print(im.format, im.size, im.mode)
 side=int(sys.argv[3]) #how big pixels are
 qRatio=.1*side #how many it skips; bigger the number faster the results but inaccurate
-
+temX=side*int(im.size[0]/side)
+temY=side*int(im.size[1]/side)
+im=im.resize((temX,temY))
 #core
 for sqX in range(int(im.size[0]/side)):
     for sqY in range(int(im.size[1]/side)):
