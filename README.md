@@ -5,6 +5,6 @@ Thats what we asked ourselves too when we built this
 `$python pixelate.py [path/to/input/image] [path/to/output/image] [pixel size]`
 
 ### Before
-![](https://raw.githubusercontent.com/aeolyus/NeedsMorePixels/master/beforecow.jpg)
+<img src="https://raw.githubusercontent.com/aeolyus/NeedsMorePixels/master/beforecow.jpg" width="50%">
 ### After
-![](https://raw.githubusercontent.com/aeolyus/NeedsMorePixels/master/aftercow.jpg)
+<img src="https://raw.githubusercontent.com/aeolyus/NeedsMorePixels/master/aftercow.jpg" width="50%">
