@@ -8,3 +8,5 @@ Thats what we asked ourselves too when we built this
 <img src="https://raw.githubusercontent.com/aeolyus/NeedsMorePixels/master/beforecow.jpg" width="50%">
 ### After
 <img src="https://raw.githubusercontent.com/aeolyus/NeedsMorePixels/master/aftercow.jpg" width="50%">
+
+Built by Sambhav Sunkerneni & Richard Huang.
